@@ -4,7 +4,7 @@ import openai
 # Replace FINE_TUNED_MODEL with the name of your fine-tuned model
 model_name = "davinci:ft-personal-2023-02-24-03-55-15"
 
-openai.api_key ="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"
+openai.api_key ="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"
 
 def on_submit(prompt):
     # Make the completion request
