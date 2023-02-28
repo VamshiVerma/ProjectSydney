@@ -60,7 +60,7 @@ if st.button("Generate"):
 
     # Get the completion text from the first choice in the choices list
     text = completion.choices[0]["text"]
-
+    
     # Display the completion in the result text area
-    st.text_area("Completion:", value=text, height=400, max_chars=None, key=None)
+    st.text_area("Completion:", value=text.split(".")[0], height=400, max_chars=None, key=None)
 
