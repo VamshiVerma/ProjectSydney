@@ -56,7 +56,7 @@ prompt = user_prompt if user_prompt else input_prompt
 
 if st.button("Generate"):
     # Make the completion request
-    completion = openai.Completion.create(model=model_name, prompt=prompt, max_tokens=1024, n=1,stop=None,temperature=0.5)
+    completion = openai.Completion.create(model=model_name, prompt=prompt)
 
     # Get the completion text from the first choice in the choices list
     text = completion.choices[0]["text"]
